@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.0)
+project(MyProject)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -o3")
+add_library(Core src/file1.cpp src/file2.cpp)
+add_executable(Main main/main.cpp)
+target_link_libraries(Main Core)
