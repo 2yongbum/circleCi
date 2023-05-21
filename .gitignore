@@ -35,7 +35,6 @@ CMakeCache.txt
 .cproject
 .settings/
 .idea/
-build/
 .vscode/
 *.pc
 .clangd/
